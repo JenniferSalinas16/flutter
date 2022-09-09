@@ -737,7 +737,7 @@ abstract class AssetBundleImageProvider extends ImageProvider<AssetBundleImageKe
         PaintingBinding.instance.imageCache.evict(key);
         throw StateError('Unable to read data');
       }
-      return decode(buffer);
+      return decode(buffer); 
     }
     ByteData data;
     // Hot reload/restart could change whether an asset bundle or key in a
